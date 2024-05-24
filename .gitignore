@@ -1,0 +1,39 @@
+# created by virtualenv automatically
+Lib/
+Scripts/
+share/
+cv2_env/
+doc/
+.venv/
+
+*.bak
+
+
+
+# 2023.04.26
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# source code analysis dir
+
+__code_analy__/
+
+# model code bak
+
+bak/
+
+exp/
+
+# model src
+
+*.pyc
+*.pth
+dataset/
+result.txt
+test_results/
+results/
+logs/
+.DS_Store

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "svu-industrial-ai"
+version = "0.1.0"
+description = "It's place for study, research, andgather source together"
+authors = ["Augustine77 <hugwolf77@gmail.com>"]
+license = "GNU, GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+pyside6 = "^6.7.0"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlalchemy = "^2.0.30"
+pytz = "^2024.1"
+pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
