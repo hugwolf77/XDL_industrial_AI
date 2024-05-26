@@ -4,10 +4,10 @@ Scripts/
 share/
 cv2_env/
 doc/
-.venv/
+
 
 *.bak
-
+*.log
 
 
 # 2023.04.26
@@ -26,14 +26,3 @@ __code_analy__/
 bak/
 
 exp/
-
-# model src
-
-*.pyc
-*.pth
-dataset/
-result.txt
-test_results/
-results/
-logs/
-.DS_Store
