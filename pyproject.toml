@@ -8,13 +8,22 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.111.0"
-
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlalchemy = "^2.0.30"
+requests = "^2.32.2"
+pytz = "^2024.1"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+pydantic = "^2.7.1"
+matplotlib = "^3.9.0"
+scikit-learn = "^1.5.0"
 
 [[tool.poetry.source]]
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
 priority = "explicit"
-애
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
