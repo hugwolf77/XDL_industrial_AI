@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import pandas as pd
-import os
 import torch
 from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import StandardScaler
@@ -62,7 +61,6 @@ class Dataset_ETT_hour(Dataset):
         df_raw = load_data_from_db(db_Table_list[self.data_path.rstrip('.csv')])
         df_raw = df_raw.drop('index', axis=1)
         print(df_raw.head(10))
-        raise
 
         border1s = [0, 12 * 30 * 24 - self.seq_len, 12 * 30 * 24 + 4 * 30 * 24 - self.seq_len]
         border2s = [12 * 30 * 24, 12 * 30 * 24 + 4 * 30 * 24, 12 * 30 * 24 + 8 * 30 * 24]
