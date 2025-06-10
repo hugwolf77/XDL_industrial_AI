@@ -123,9 +123,9 @@ class Client(QWidget):
         self.Input_data['date'] = pd.to_datetime(self.Input_data['date'])
 
         # view widget table setting
-        self.window.input_tableView.setColumnCount(9)
+        self.window.input_tableView.setColumnCount(self.Input_data.shape[1])
         self.window.input_tableView.setHorizontalHeaderLabels(
-                        ['Index', 'date', 'HUFL', 'HULL', 'MUFL', 'MULL', 'LUFL', 'LULL', 'OT'])
+                        ['Idx', 'date', 'HUFL', 'HULL', 'MUFL', 'MULL', 'LUFL', 'LULL', 'OT'])
         
         #DB내부에 저장된 결과물의 갯수를 저장한다.        
         count = self.Input_data.shape[0]
