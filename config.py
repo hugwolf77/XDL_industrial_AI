@@ -8,11 +8,11 @@ class Settings:
     SERVICE_PORT = os.getenv("SERVICE_PORT")
 
     # DataBase Info
-    DB_USERNAME : str = os.getenv("DB_USERNAME")
-    DB_PASSWORD = os.getenv("DB_PASSWORD")
-    DB_HOST : str = os.getenv("DB_HOST")
-    DB_PORT : str = os.getenv("DB_PORT")
-    DB_DATABASE : str = os.getenv("DB_DATABASE")
+    # DB_USERNAME : str = os.getenv("DB_USERNAME")
+    # DB_PASSWORD = os.getenv("DB_PASSWORD")
+    # DB_HOST : str = os.getenv("DB_HOST")
+    # DB_PORT : str = os.getenv("DB_PORT")
+    # DB_DATABASE : str = os.getenv("DB_DATABASE")
     DATABASE_URL = os.getenv("DATABASE_URL")
 
 class Modelargs:
@@ -53,7 +53,7 @@ class Modelargs:
     embed            = 'timeF'   # time features encoding, options:[timeF, fixed, learned]'
     activation       = 'gelu'    # activation
     output_attention = True      # whether to output attention in ecoder
-    do_predict       = False      # whether to predict unseen future data
+    do_predict       = 0      # whether to predict unseen future data
     # optimization
     num_workers   = 1        # data loader num workers
     itr           = 1         # experiments times
@@ -70,5 +70,6 @@ class Modelargs:
     gpu = 0
     use_multi_gpu = False
     devices       = '0,1,2,3' # device ids of multile gpus
+    device_ids    = []
     test_flop     = False     # See utils/tools for usage
 

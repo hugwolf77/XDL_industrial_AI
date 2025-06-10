@@ -39,7 +39,6 @@ def apiRun(url, port):
     # logger.info(f"!! service server start !!")
     uvicorn.run("api.service:api", host=url, port=int(port), reload=True)
 
-
 # def shutdown():
 #     os.kill(os.getpid(), signal.SIGTERM)
 #     logger.info(f"!! service server shutting down !!")
